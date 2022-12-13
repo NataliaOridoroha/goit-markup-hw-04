@@ -95,7 +95,7 @@ margin-right: 77px;
 
 .flex {
 display: flex;
-align-items: center;
+align-items: baseline;
 }
 
 .studio {
@@ -342,6 +342,11 @@ background: var(--brend-background);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.our-team:nth-child(4n) {
+  margin-right: 0;
+  }
+
+
 .icons-symbol {
   display: flex;
   flex-direction: row;
@@ -387,7 +392,18 @@ margin-bottom: 8px;
 }
 
 
+.client {
+  margin-right: 24px;
+
+}
+
 .clients {
+  width: 168px;
+  height: 88px;
+}
+
+.hover-focus {
+display: block;
 min-width: 168px;
 fill: var(--color4);
 border: 1px solid #8E8F99;
@@ -395,18 +411,14 @@ border-radius: 4px;
 width: 168px;
 height: 88px;
 cursor: pointer;
-}
-
-.client {
-  margin-right: 24px;
   }
 
 .client:nth-child(6n) {
 margin-right: 0;
 }
 
-.clients:hover,
-.clients:focus {
+.hover-focus:hover,
+.hover-focus:focus {
 fill: var(--button-background);
 border: 1px solid #4D5AE5;
 border-radius: 4px;
@@ -422,19 +434,15 @@ background: var(--brand-color) ;
  
 .web {
 width: 264px;
-height: 110px;
 left: 156px;
 top: 3001px;  
 margin-right: 120px;
-margin-bottom: 100px;
 }
 
 .web2  {
   width: 208px;
-  height: 80px;
   left: 540px;
-  top: 3001px;
-  margin-bottom: 130px;   
+  top: 3001px;  
 }
 
 .footer {
@@ -492,12 +500,11 @@ width: 40px;
 height: 40px;
 fill:var(--color4, #8e8f99);
 cursor: pointer;
-align-items: flex-start;
 
 }
 
-.icons-futer:hover,
-.icons-futer:focus {
+.hover-focus2:hover,
+.hover-focus2:focus {
 background-color: var(--footer-icon);
 fill: Solid;
 border-radius: 50%;
