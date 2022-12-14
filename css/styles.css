@@ -505,6 +505,7 @@ cursor: pointer;
 
 .hover-focus2:hover,
 .hover-focus2:focus {
+display: block;
 background-color: var(--footer-icon);
 fill: Solid;
 border-radius: 50%;
